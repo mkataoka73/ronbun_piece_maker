@@ -1,0 +1,16 @@
+<h1>Elements#new</h1>
+
+<%= form_with model: @element do |f| %>
+  <%#= render "shared/errors", object: @element %>
+
+  <%= f.label :title, class: "control-label" %>
+  <%= f.text_field :title, class: "form-control" %>
+
+  <%= f.label :citation, class: "control-label" %>
+  <%= f.text_area :citation, class: "form-control" %>
+
+  <%= f.label :source, class: "control-label" %>
+  <%= f.text_field :source, class: "form-control" %>
+
+  <%= f.submit "Save / Update", class: "btn btn-primary" %>
+<% end %>
