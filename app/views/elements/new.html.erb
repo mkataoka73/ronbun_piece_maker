@@ -1,7 +1,7 @@
 <h1>Elements#new</h1>
 
-<%= form_with model: @element do |f| %>
-  <%#= render "shared/errors", object: @element %>
+<%= form_with model: @element, local: true do |f| %>
+  <%= render "shared/errors", object: f.object %>
 
   <%= f.label :title, class: "control-label" %>
   <%= f.text_field :title, class: "form-control" %>
@@ -10,7 +10,7 @@
   <%= f.text_area :citation, class: "form-control" %>
 
   <%= f.label :source, class: "control-label" %>
-  <%= f.text_field :source, class: "form-control" %>
+  <%= f.text_field :source, class: "form-control mb-2" %>
 
   <%= f.submit "Save / Update", class: "btn btn-primary" %>
 <% end %>
