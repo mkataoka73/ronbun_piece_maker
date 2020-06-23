@@ -1,2 +1,21 @@
-<h1>Elements#index</h1>
-<p>Find me in app/views/elements/index.html.erb</p>
+<h1>ピースの素</h1>
+<p>論文の素になるピースの素です。</p>
+
+<main>
+  <table class="table table-hover">
+    <thead>
+      <th>title</th>
+      <th>citation</th>
+      <th>source</th>
+    </thead>
+    <tbody>
+      <% @elements.each do |e| %>
+        <tr>
+          <td><%= e.title %></td>
+          <td><%= e.citation.truncate(20) %></td>
+          <td><%= e.source %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</main>
