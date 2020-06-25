@@ -1,6 +1,10 @@
 <h1>ピースの素</h1>
 <p>論文の素になるピースの素です。</p>
 
+<nav class="nav nav-buttons mb-2">
+  <%= link_to "New", new_element_path, class: "btn btn-primary" %>
+  <%= link_to "Books", books_path, class: "btn btn-primary ml-2" %>
+</nav>
 <main>
   <table class="table table-hover">
     <thead>
@@ -11,7 +15,7 @@
     <tbody>
       <% @elements.each do |e| %>
         <tr>
-          <td><%= e.title %></td>
+          <td><%= link_to e.title, e %></td>
           <td><%= e.citation.truncate(20) %></td>
           <td><%= e.source %></td>
         </tr>

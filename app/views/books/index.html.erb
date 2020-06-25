@@ -1,0 +1,26 @@
+<h1>Books#index</h1>
+<p>Find me in app/views/books/index.html.erb</p>
+
+<nav class="nav nav-buttons">
+  <%= link_to "new", new_book_path, class: "btn btn-primary mb-2" %>
+</nav>
+<main>
+  <table class="table table-hover">
+    <thead>
+      <th>title</th>
+      <th>author</th>
+      <th>published year</th>
+      <th>isbn</th>
+    </thead>
+    <tbody>
+      <% @books.each do |book| %>
+        <tr>
+          <td><%= link_to book.title, book %></td>
+          <td><%= book.author %></td>
+          <td><%= book.published_year %></td>
+          <td><%= book.isbn %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</main>

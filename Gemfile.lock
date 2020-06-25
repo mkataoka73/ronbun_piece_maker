@@ -109,8 +109,6 @@ GEM
     open_bd (0.3.0)
       faraday
       faraday_middleware
-    openbd_api (0.3.2)
-      slop (~> 4.4)
     public_suffix (4.0.5)
     puma (4.3.5)
       nio4r (~> 2.0)
@@ -164,7 +162,6 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    slop (4.8.1)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -215,7 +212,6 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.2)
   open_bd
-  openbd_api
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.1)
   sass-rails (>= 6)

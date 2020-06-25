@@ -1,0 +1,12 @@
+<h1>Books#show</h1>
+
+<h2> <%= @book.title %><small class="author text-muted"> <%= @book.author %> </small> </h2>
+
+<div class="image">
+  <%= image_tag @book.get_image_url, height: "250" if @book.isbn %>
+</div>
+
+<div class="nav nav-buttons mt-2">
+  <%= link_to "edit", edit_book_path(@book), class: "btn btn-secondary" %>
+  <%= link_to "back to index", books_path, class: "btn btn-secondary ml-2" %>
+</div>

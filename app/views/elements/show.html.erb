@@ -1,2 +1,9 @@
-<h1>Elements#show</h1>
-<p>Find me in app/views/elements/show.html.erb</p>
+<h1 class="element-title mt-2 pl-3"> <%= @element.title %></h1>
+
+<div class="citation mt-3">
+  <%= @element.citation %>
+</div>
+
+<h6 class="element-source mt-2">
+  出典：『<%= @element.source %>』
+</h6>

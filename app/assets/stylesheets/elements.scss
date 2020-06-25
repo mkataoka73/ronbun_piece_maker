@@ -1,3 +1,14 @@
 // Place all the styles related to the elements controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.element-title {
+  font-size: 1.5em;
+}
+
+.citation {
+  border: 2px solid #aaa;
+  padding: 20px;
+  font-size: .9em;
+  border-radius: 5px;
+}
