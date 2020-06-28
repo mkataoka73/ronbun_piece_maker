@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(version: 2020_06_24_033816) do
   create_table "elements", force: :cascade do |t|
     t.string "title"
     t.text "citation"
-    t.string "source"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "source"
   end
 
   create_table "sources", force: :cascade do |t|
